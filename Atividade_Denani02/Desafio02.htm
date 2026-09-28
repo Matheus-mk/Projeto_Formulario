@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slk Formulario</title>
+</head>
+<body>
+    <h1><strong>Matheus Henrique Formulario</strong></h1>
+<ul style="list-style-type: disc;">
+   <li><p><a href="#secao1">Sobre mim</a></p></li>
+     <li><p><a href="#secao2">Projetos</a></p></li>
+      <li><p><a href="#secao3">Contato</a></p></ul><li>
+</ul>
+<hr>
+<h2 id="secao1"></h2>
+ <h2>Sobre Mim</h2>
+ <img src="foto/1000008348.jpeg" alt="Meu rosto"width="280" height="250">
+ <p>Sou estudante de <strong>Desenvolvimento de Sistemas</strong> no SENAI</p>
+ <p>Tenho conhecimento em<em>HTML, CSS</em> e estou estudando <em>JavaScript</em></p>
+
+ <h2><Strong>Minhas Habilidades</Strong></h2>
+ <ul style="list-style-type: square;">
+<li>HTML5 Semântico</li>
+<li>CSS3 e Responsividade</li>
+<li>Formulário e Validação</li>
+<li>Estruturção de Dados</li>
+</ul>
+<hr>
+<h2><strong>Meus Projetos</strong></h2>
+     <table border="1">
+        <!--Cabeçalho da tabela-->
+        <thead>
+            <tr>
+                 <th>Projeto</th>
+                 <th>Tecnologias</th>
+                 <th>Status</th>
+                 <th>Link</th>
+            </tr>
+        </thead>
+        <!-- Corpo da tabela-->
+         <tbody>
+            <tr>
+                <td>GameZone Retro</td>
+                <td>HTML, CSS</td>
+                <td>Concluido</td>
+                <td> <a href="https://github.com/Matheus-mk/Projeto_HTML" target="_blank">Ver Projeto</a></td>
+            </tr>
+            <tr>
+                <td>Projeto Estacionamento</td>
+                <td>HTML</td>
+                <td>Concluido</td>
+                <td> <a href="https://github.com/Matheus-mk/projeto-estacionamento" target="_blank">Ver Projeto</a></td>
+            </tr>
+            <tr>
+                <td>Lógica de Programação e Algoritmos</td>
+                <td>Desenhe.io, Fluxograma, VisualG e JavaScript</td>
+                <td>Concluido</td>
+                <td> <a href="https://github.com/Matheus-mk/aula_de_logica" target="_blank">Ver Projeto</a></td>
+            </tr>
+         </tbody>
+     </table>
+     <hr>
+     <h2><strong>Entre em contato</strong></h2>
+     <fieldset><legend>Dados do Contato</legend>
+    <form action="processar.php" method="post">
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" name="nome" required><br><br>
+
+        <!--Campo de email com validação-->
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label for="interesses">Interesses:</label><br>
+        <input type="checkbox" id="programacao" name="interesses[]" value="programação">
+        <label for="programacao">Programação</label><br>
+        <input type="checkbox" id="design" name="interesses[]" value="design">
+        <label for="design">Design</label><br>
+        <br>
+
+        <!--Lista de Seleção(select)-->
+        <label for="cidade">Assunto:</label>
+        <select id="cidade" name="cidade">
+            <option value="">Oportunidade de Trablho</option>
+            <option value="sp">Desenvolvimento de projeto</option>
+            <option value="rj">Contato Geral</option>
+        </select><br><br>
+
+        <!--Área de texto-->
+        <label for="comentarios">Mensagem:</label><br>
+        <textarea id="comentarios" name="comentarios" rows="4" cols="50"></textarea><br><br>
+
+        <!--Botões do formulário-->
+        <button type="submit">Enviar Mensagem</button>
+    
+    </fieldset>
+    <p>© 2026 Meta. Desenvolvimento durante curso do SENAI</p>
+    <hr>
+    <a href="matheusgamer040110@gmail.com" target="_blank">Email pessoal</a> | <a href="(11) 99666-66660" target="_blank">Número para contato</a>
+</body>
+</html>
